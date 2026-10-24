@@ -276,23 +276,9 @@ h2 {
             <div id="youtube-telemetry-list"><div class="telemetry-item">Connecting...</div></div>
         </div>
         <div class="esports-banner-box">
-            <img src="file:///F:/Central Office/Switch_and_Control/Systems/Systems_Display/Alternate Placement Inititive/Node/Community Calendar/Content/StartAFight.png" class="esports-banner-img" alt="Start A Fight Esports Logo" onclick="openExternal('https://www.startafight.com/')">
-            <a class="esports-link" onclick="openExternal('https://www.startafight.com/')">Start A Fight Esports</a>
-            <div class="esports-bio">Started by Gamers and run by Gamers, Start A Fight Esports is focused on helping our Players and Content creators achieve their Professional Goals, winning championships, making great content, and promoting a philosophy of positivity and inclusion.<br><br>Basically, be a nice person. Don't be a d!ck.</div>
-        </div>
-        <div class="esports-banner-box">
-            <img src="file:///F:/Central Office/Switch_and_Control/Systems/Systems_Display/Alternate Placement Inititive/Node/Community Calendar/Content/Fighting Sloth.png" class="esports-banner-img" alt="Fighting Sloth Logo" onclick="openExternal('https://kick.com/fightingsloth')">
-            <a class="esports-link" onclick="openExternal('https://kick.com/fightingsloth')">The FightingSloth // SAF Esports // Chat 4 Charity</a>
-            <div class="esports-bio">Content Creator for SAF Esports. Chat4Charity every Tuesday @ 11am AEDT 🫶 Passion driven & pouring my soul into streaming so the community has a reliable place to come to.<br><br>Each week a Charity is chosen by members of the Kick Community we enjoy nightly. By just showing up and chatting You are helping raise money for a worthy charity!<br><br>Donations are accepted, but not required!<br><br>Positivity thrives here.</div>
-        </div>
-        <div class="esports-banner-box">
-            <img src="file:///F:/Central Office/Switch_and_Control/Systems/Systems_Display/Alternate Placement Inititive/Node/Community Calendar/Content/ShadyHD.jpg" class="esports-banner-img" alt="ShadyHD Logo" onclick="openExternal('https://kick.com/shadyhd')">
-            <a class="esports-link" onclick="openExternal('https://kick.com/shadyhd')">ShadyHD // Clip of The Week</a>
-            <div class="esports-bio">Each Monday night ShadyHD hosts Clip of the Week, showcasing Gaming Clips sent in by Streamers in our Community. Reviews are streamed Live and weekly        Winners are chosen on Stream. If you would like to be submitted please refer to the link below.<br><br>Prizes:<br><br>• Kick: 5 Gifted Subs<br>• Twitch: 2500 Bits</div>
-            <div class="link-row">
-                <a onclick="openExternal('https://www.youtube.com/playlist')">[View Clips]</a>
-                <a onclick="openExternal('https://forms.gle/EJcvbTx9R8p4Yd')">[Submit Clips]</a>
-            </div>
+            <img src="content/sample_banner.png" class="esports-banner-img" alt="Community Banner" onclick="openExternal('https://example.com')">
+            <a class="esports-link" onclick="openExternal('https://example.com')">Community Esports League</a>
+            <div class="esports-bio">Welcome to our community calendar! Replace this banner and bio with your own organization's branding and links.</div>
         </div>
     </div>
     <div class="hud-panel">
@@ -393,154 +379,35 @@ setInterval(updateClocks, 1000);
 updateClocks();
 let viewDate = new Date();
 viewDate.setDate(1);
+
+// SAMPLE WEEKLY SCHEDULE (0 = SUN, 1 = MON, ... 6 = SAT)
 const weeklySchedule = {
-    0: [
-        { time: "4:00 AM", name: "xClockyx", note: "Regular Relay" },
-        { time: "9:00 AM", name: "crowegamingg", note: "Primary Relay" },
-        { time: "12:00 PM", name: "Blondiee", note: "Relay Node B" },
-        { time: "1:00 PM", name: "TheCrazyDane", note: "Midday Stream" },
-        { time: "8:00 PM", name: "ShadyHD", note: "Hosts: Clip of The Week" },
-        { time: "9:00 PM", name: "The FightingSloth", note: "Community Event" }
-    ],
-    1: [
-        { time: "4:00 AM", name: "xClockyx", note: "Regular Relay" },
-        { time: "9:00 AM", name: "crowegamingg", note: "Primary Relay" },
-        { time: "9:00 AM", name: "Deranged Delusion", note: "Subnet Monitor" },
-        { time: "12:00 PM", name: "Blondiee", note: "Relay Node B" },
-        { time: "1:00 PM", name: "TheCrazyDane", note: "Midday Stream" },
-        { time: "7:00 PM", name: "xTimsanityx", note: "Evening Feed" },
-        { time: "8:00 PM", name: "ShadyHD", note: "Night Feed" },
-        { time: "9:00 PM", name: "Fighting Sloth (SAF) Presents Chat 4 Charity", note: "Charity Stream" }
-    ],
-    2: [
-        { time: "4:00 AM", name: "xClockyx", note: "Regular Relay" },
-        { time: "9:00 AM", name: "crowegamingg", note: "Primary Relay" },
-        { time: "9:00 AM", name: "Deranged Delusion", note: "Subnet Monitor" },
-        { time: "12:00 PM", name: "Blondiee", note: "Relay Node B" },
-        { time: "1:00 PM", name: "TheCrazyDane", note: "Midday Stream" },
-        { time: "7:00 PM", name: "xTimsanityx", note: "Evening Feed" },
-        { time: "8:00 PM", name: "ShadyHD", note: "Night Feed" },
-        { time: "9:00 PM", name: "The FightingSloth", note: "Community Event" }
-    ],
-    3: [
-        { time: "4:00 AM", name: "xClockyx", note: "Regular Relay" },
-        { time: "9:00 AM", name: "crowegamingg", note: "Primary Relay" },
-        { time: "9:00 AM", name: "Deranged Delusion", note: "Subnet Monitor" },
-        { time: "12:00 PM", name: "Blondiee", note: "Relay Node B" },
-        { time: "1:00 PM", name: "TheCrazyDane", note: "Midday Stream" },
-        { time: "7:00 PM", name: "xTimsanityx", note: "Evening Feed" },
-        { time: "8:00 PM", name: "ShadyHD", note: "Night Feed" },
-        { time: "9:00 PM", name: "The FightingSloth", note: "Community Event" }
-    ],
-    4: [
-        { time: "4:00 AM", name: "xClockyx", note: "Regular Relay" },
-        { time: "9:00 AM", name: "crowegamingg", note: "Primary Relay" },
-        { time: "9:00 AM", name: "Deranged Delusion", note: "Subnet Monitor" },
-        { time: "12:00 PM", name: "Blondiee", note: "Relay Node B" },
-        { time: "1:00 PM", name: "TheCrazyDane", note: "Midday Stream" },
-        { time: "7:00 PM", name: "xTimsanityx", note: "Evening Feed" },
-        { time: "8:00 PM", name: "ShadyHD", note: "Night Feed" },
-        { time: "9:00 PM", name: "The FightingSloth", note: "Community Event" }
-    ],
-    5: [
-        { time: "4:00 AM", name: "xClockyx", note: "Regular Relay" },
-        { time: "9:00 AM", name: "crowegamingg", note: "Primary Relay" },
-        { time: "9:00 AM", name: "Deranged Delusion", note: "Subnet Monitor" },
-        { time: "12:00 PM", name: "Blondiee", note: "Relay Node B" },
-        { time: "1:00 PM", name: "TheCrazyDane", note: "Midday Stream" },
-        { time: "7:00 PM", name: "xTimsanityx", note: "Evening Feed" },
-        { time: "8:00 PM", name: "ShadyHD", note: "Night Feed" },
-        { time: "9:00 PM", name: "The FightingSloth", note: "Community Event" }
-    ],
-    6: [
-        { time: "4:00 AM", name: "xClockyx", note: "Regular Relay" },
-        { time: "9:00 AM", name: "crowegamingg", note: "Primary Relay" },
-        { time: "12:00 PM", name: "Blondiee", note: "Relay Node B" },
-        { time: "1:00 PM", name: "TheCrazyDane", note: "Midday Stream" },
-        { time: "8:00 PM", name: "ShadyHD", note: "Hosts: Clip of The Week" },
-        { time: "9:00 PM", name: "The FightingSloth", note: "Community Event" }
-    ]
+    0: [{ time: "12:00 PM", name: "SampleStreamer1", note: "Community Stream" }],
+    1: [{ time: "6:00 PM", name: "SampleStreamer2", note: "Weekly Event" }],
+    2: [{ time: "8:00 PM", name: "SampleStreamer1", note: "Game Night" }],
+    3: [],
+    4: [{ time: "7:00 PM", name: "SampleStreamer3", note: "Charity Raid" }],
+    5: [],
+    6: [{ time: "3:00 PM", name: "SampleStreamer2", note: "Weekend Special" }]
 };
+
+// SAMPLE STREAMER PROFILES & DIRECTORY
 const streamerProfiles = {
-    "xClockyx": {
-        bio: "Clocky (or Lyric) here — Father of 3 and a Man with 1 hand. Trying to break that 9-5 cycle with streaming. I play a lot of Apex Legends at the moment but always open to trying new games.",
+    "SampleStreamer1": {
+        bio: "Example bio for SampleStreamer1. Customize this in calendar_index.html or external JSON.",
         links: [
-            {name: "Club", url: "https://club.com/clocky"},
-            {name: "Instagram", url: "https://instagram.com/x_clocky"},
-            {name: "X (Twitter)", url: "https://x.com/x_clocky"},
-            {name: "YouTube", url: "https://youtube.com/@clocky.x"},
-            {name: "TikTok", url: "https://tiktok.com/@clocky.x"},
-            {name: "Discord", url: "https://discord.gg/xclocky"}
+            {name: "Twitch", url: "https://twitch.tv/example"},
+            {name: "Discord", url: "https://discord.gg/example"}
         ]
     },
-    "crowegamingg": {
-        bio: "Hi! I am Crowe! Super high energy and love FPS games! Army Vet and Full Time Streamer looking to build a cool community to vibe out with.",
+    "SampleStreamer2": {
+        bio: "Example bio for SampleStreamer2.",
         links: [
-            {name: "Club", url: "https://club.com/crowegamingg"},
-            {name: "Instagram", url: "https://instagram.com/_crowegamingg"},
-            {name: "X", url: "https://x.com/Crowegamingg"},
-            {name: "Facebook", url: "https://facebook.com/Crowegamingg"},
-            {name: "YouTube", url: "https://youtube.com/@Crowegamingg"},
-            {name: "TikTok", url: "https://tiktok.com/@Crowegamingg"},
-            {name: "Discord", url: "https://discord.gg/Crowe"}
+            {name: "Kick", url: "https://kick.com/example"}
         ]
-    },
-    "Deranged Delusion": {
-        bio: "The name is Deranged Delusion but my friends call me Donut or Miranda. Variety streamer from the USA bringing chill vibes and occasional blond moments.",
-        links: [
-            {name: "Discord", url: "https://discord.gg/hf2FZdABsC"},
-            {name: "Blerp", url: "https://blerp.com/u/deranged8772"},
-            {name: "Instagram", url: "https://www.instagram.com/derangeddelusion/"},
-            {name: "YouTube", url: "https://www.youtube.com/channel/UCeoIl5IyQM"}
-        ]
-    },
-    "Blondiee": {
-        bio: "18+ Stream | British | Call me Blondie or Maria :) | Competitive Call of duty player for PeachyeSports | Here to make your day better!",
-        links: [
-            {name: "Club", url: "https://club.com/blondiee"},
-            {name: "X", url: "https://x.com/blondieebeams"},
-            {name: "TikTok", url: "https://tiktok.com/@blondieebeams"}
-        ]
-    },
-    "TheCrazyDane": {
-        bio: "Hi my name is Henrik from Denmark and 54 years old. I have been streaming now for about 13 years now in all.",
-        links: [
-            {name: "Kick", url: "https://kick.com/thecrazydane"},
-            {name: "Instagram", url: "https://instagram.com/mrthecrazydane"},
-            {name: "X", url: "https://x.com/@TheCrazyDane"},
-            {name: "YouTube", url: "https://youtube.com/@TheCrazyDane"}
-        ]
-    },
-    "xTimsanityx": {
-        bio: "Hey, I’m Tim — lifelong gamer & CMO for TakeTheOath Gaming. Grinding since the Sega Genesis days...",
-        links: [
-            {name: "X", url: "https://x.com/xTimsanityx"},
-            {name: "YouTube", url: "https://youtube.com/@xtimsanityx"},
-            {name: "Discord", url: "https://discord.gg/dsc.gg/sanitysquad"}
-        ]
-    },
-    "ShadyHD": {
-        bio: "ShadyHD is a play on my ADHD. You can call me shady or shadow. I am a fairly chill gamer with a competitive side. I mostly play Apex and Overwatch, with a mix of variety such as rocket league and horror games etc.",
-        links: [
-            {name: "X", url: "https://x.com/TheShadyHD"},
-            {name: "YouTube", url: "https://youtube.com/@shadyhd20"},
-            {name: "TikTok", url: "https://tiktok.com/@theshadyhd"},
-            {name: "Discord", url: "https://discord.gg/K7fNERnvrh"}
-        ]
-    },
-    "The FightingSloth": {
-        bio: "Content Creator for SAF Esports. Chat4Charity every Tuesday @ 11am AEDT. Passion driven & pouring my soul into streaming so the community has a reliable place to come to. Positivity thrives here.",
-        links: [
-            {name: "X", url: "https://x.com/FightingSloth"},
-            {name: "YouTube", url: "https://youtube.com/@fightingsloth"},
-            {name: "Discord", url: "https://discord.gg/E6HwppqMCD"}
-        ]
-    },
-    "Fighting Sloth (SAF) Presents Chat 4 Charity": {
-        bio: "Special charity event hosted by The FightingSloth.",
-        links: [{name: "Discord", url: "https://discord.gg/E6HwppqMCD"}]
     }
 };
+
 let currentActiveTab = "events";
 let selectedDayEvents = [];
 function changeMonth(dir) { viewDate.setMonth(viewDate.getMonth() + dir); renderCalendar(); }
