@@ -31,7 +31,6 @@ To eliminate the need for always-on local hardware while maintaining fast, relia
 * `server.js` — Core backend worker script, API routing, and multi-platform polling logic.
 * `calendar_index.html` — The main frontend dashboard and interactive calendar interface.
 * `calendar.py` — Supporting utility script for local calendar management and data formatting.
-* `0100100001001000.js` — Specialized module handler for routing and data formatting.
 * `.env` — Local environment configuration template for API keys and endpoint secrets.
 
 ---
